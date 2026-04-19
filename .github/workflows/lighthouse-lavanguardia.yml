@@ -17,13 +17,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
 
       - name: Install Unlighthouse
-        run: npm install -g @unlighthouse/cli puppeteer
+        run: |
+          npm install -g @unlighthouse/cli puppeteer
+          npm list -g --depth=0 | grep unlighthouse
+          unlighthouse-ci --version || true
 
       - name: Generate timestamp
         id: ts
