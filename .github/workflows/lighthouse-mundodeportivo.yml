@@ -33,7 +33,7 @@ jobs:
 
       - name: Generate timestamp
         id: ts
-        run: echo "timestamp=$(date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
+        run: echo "timestamp=$(TZ='Europe/Madrid' date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
 
       - name: Accept cookie consent
         run: node scripts/accept-cookies.js https://www.mundodeportivo.com /tmp/consent-cookies.json
