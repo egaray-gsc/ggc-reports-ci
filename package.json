@@ -4,6 +4,7 @@
   "description": "Sitio estático en GitHub Pages que acumula informes de rendimiento generados con [Unlighthouse](https://unlighthouse.dev/) (Lighthouse) vía GitHub Actions.",
   "main": "index.js",
   "scripts": {
+    "preview": "serve . -l 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
     "puppeteer": "^24.41.0"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "serve": "^14.2.6"
   }
 }

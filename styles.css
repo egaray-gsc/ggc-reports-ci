@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Lighthouse Reports — minimal dark theme
+   Drop-in stylesheet. Styles the existing markup:
+   h1, p, then alternating h2 + ul > li > a pairs (one pair per site).
+   Layout: 2 sites side-by-side, centered on the page.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Surfaces — warm-neutral dark, not pure black */
+  --bg:            #0e0f11;
+  --bg-elevated:   #15171a;
+  --bg-hover:      #1c1f23;
+  --border:        #24272c;
+  --border-strong: #2f3339;
+
+  /* Text */
+  --text:          #e8e8ea;
+  --text-muted:    #9096a0;
+  --text-subtle:   #5b616b;
+
+  /* Accent — soft mint */
+  --accent:        oklch(0.82 0.09 165);
+  --accent-dim:    oklch(0.82 0.09 165 / 0.12);
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --radius: 8px;
+  --col-w: 340px;       /* width of each site column */
+  --col-gap: 40px;      /* gap between the two columns */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* ---------- Page as a centered CSS grid ---------- */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  font-feature-settings: 'ss01', 'cv11';
+  padding: 88px 24px 120px;
+
+  display: grid;
+  grid-template-columns: var(--col-w) var(--col-w);
+  grid-template-rows: auto auto auto auto; /* h1, p, h2-row, ul-row */
+  column-gap: var(--col-gap);
+  row-gap: 0;
+  justify-content: center;
+  align-content: start;
+  text-align: left;
+}
+
+/* Explicit placement: each site pair occupies its own column */
+h2:nth-of-type(1) { grid-column: 1; grid-row: 3; }
+ul:nth-of-type(1) { grid-column: 1; grid-row: 4; }
+h2:nth-of-type(2) { grid-column: 2; grid-row: 3; }
+ul:nth-of-type(2) { grid-column: 2; grid-row: 4; }
+
+/* Header elements span both columns and center their text */
+h1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: center;
+  text-align: center;
+}
+h1 + p {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: center;
+  text-align: center;
+}
+
+/* ---------- Header ---------- */
+h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;   /* reserves space for the dot so text centers optically */
+  padding-right: 22px;  /* mirror padding → text block is centered within h1 */
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+  transform: translateY(-50%);
+}
+
+h1 + p {
+  margin: 0 auto 64px;
+  color: var(--text-muted);
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  max-width: 540px;
+}
+
+/* ---------- Site section titles ---------- */
+h2 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  align-self: end;
+}
+
+/* ---------- Report list ---------- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  overflow: hidden;
+  align-self: start;
+}
+
+li { border-bottom: 1px solid var(--border); }
+li:last-child { border-bottom: none; }
+
+/* ---------- Links ---------- */
+li a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  letter-spacing: 0.01em;
+  transition: background 120ms ease, color 120ms ease, padding-left 160ms ease;
+  white-space: nowrap;
+}
+
+li a::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid var(--text-subtle);
+  border-top: 1.5px solid var(--text-subtle);
+  transform: rotate(45deg);
+  transition: border-color 120ms ease, transform 160ms ease;
+  flex: 0 0 auto;
+}
+
+li a:hover {
+  background: var(--bg-hover);
+  color: var(--accent);
+  padding-left: 24px;
+}
+li a:hover::before {
+  border-color: var(--accent);
+  transform: rotate(45deg) translate(2px, -2px);
+}
+
+li a:focus-visible {
+  outline: none;
+  background: var(--bg-hover);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+/* "latest" badge on first row of each list */
+li:first-child a::after {
+  content: 'latest';
+  margin-left: auto;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* ---------- Selection & scrollbar ---------- */
+::selection { background: var(--accent-dim); color: var(--text); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: #3a3f46; }
+
+/* ---------- Responsive: collapse to 1 column ---------- */
+@media (max-width: 780px) {
+  body {
+    grid-template-columns: minmax(0, 420px);
+    padding: 56px 16px 80px;
+  }
+  h1 { font-size: 26px; }
+  h1 + p { margin-bottom: 40px; }
+  li a { padding: 13px 16px; font-size: 12.5px; }
+
+  /* Stack both sites in a single column */
+  h2:nth-of-type(1) { grid-column: 1; grid-row: 3; }
+  ul:nth-of-type(1) { grid-column: 1; grid-row: 4; margin-bottom: 32px; }
+  h2:nth-of-type(2) { grid-column: 1; grid-row: 5; }
+  ul:nth-of-type(2) { grid-column: 1; grid-row: 6; }
+}
