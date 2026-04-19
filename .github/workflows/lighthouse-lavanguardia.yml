@@ -41,6 +41,7 @@ jobs:
       - name: Run Unlighthouse audit
         run: |
           unlighthouse-ci \
+            --config-file unlighthouse-lavanguardia.config.ts \
             --build-static \
             --output-path reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/
 

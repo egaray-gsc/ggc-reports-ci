@@ -41,6 +41,7 @@ jobs:
       - name: Run Unlighthouse audit
         run: |
           unlighthouse-ci \
+            --config-file unlighthouse-mundodeportivo.config.ts \
             --site https://www.mundodeportivo.com \
             --build-static \
             --output-path reports/mundodeportivo.com/${{ steps.ts.outputs.timestamp }}/

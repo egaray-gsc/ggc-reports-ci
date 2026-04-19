@@ -3,7 +3,7 @@ import fs from 'fs';
 const COOKIES_FILE = '/tmp/consent-cookies.json';
 
 export default {
-  site: 'https://www.lavanguardia.com',
+  site: 'https://www.mundodeportivo.com',
 
   scanner: {
     device: 'mobile',
