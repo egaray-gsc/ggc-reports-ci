@@ -48,6 +48,19 @@ jobs:
           find reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
             -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
 
+      - name: Prune old reports (keep last 3)
+        run: |
+          REPORT_DIR="reports/lavanguardia.com"
+          REPORTS=($(ls -d "$REPORT_DIR"/*/ 2>/dev/null | sort))
+          COUNT=${#REPORTS[@]}
+          if [ "$COUNT" -gt 3 ]; then
+            DELETE_COUNT=$((COUNT - 3))
+            for dir in "${REPORTS[@]:0:$DELETE_COUNT}"; do
+              echo "Removing old report: $dir"
+              rm -rf "$dir"
+            done
+          fi
+
       - name: Generate index.html
         run: node scripts/generate-index.js
 
