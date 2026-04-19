@@ -1,0 +1,47 @@
+name: Lighthouse - lavanguardia.com
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install Unlighthouse
+        run: npm install -g @unlighthouse/cli puppeteer
+
+      - name: Generate timestamp
+        id: ts
+        run: echo "timestamp=$(date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
+
+      - name: Run Unlighthouse audit
+        run: |
+          unlighthouse-ci \
+            --build-static \
+            --output-path reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/
+
+      - name: Generate index.html
+        run: node scripts/generate-index.js
+
+      - name: Commit & push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ index.html
+          git commit -m "Lighthouse report: lavanguardia.com ${{ steps.ts.outputs.timestamp }}"
+          git push
