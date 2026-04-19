@@ -32,6 +32,9 @@ jobs:
         id: ts
         run: echo "timestamp=$(date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
 
+      - name: Accept cookie consent
+        run: node scripts/accept-cookies.js https://www.lavanguardia.com /tmp/consent-cookies.json
+
       - name: Run Unlighthouse audit
         run: |
           unlighthouse-ci \
