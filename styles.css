@@ -35,7 +35,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-/* ---------- Page as a centered CSS grid ---------- */
+/* ---------- Page layout ---------- */
 body {
   margin: 0;
   min-height: 100vh;
@@ -46,35 +46,25 @@ body {
   line-height: 1.55;
   font-feature-settings: 'ss01', 'cv11';
   padding: 88px 24px 120px;
-
-  display: grid;
-  grid-template-columns: var(--col-w) var(--col-w);
-  grid-template-rows: auto auto auto auto; /* h1, p, h2-row, ul-row */
-  column-gap: var(--col-gap);
-  row-gap: 0;
-  justify-content: center;
-  align-content: start;
   text-align: left;
 }
 
-/* Explicit placement: each site pair occupies its own column */
-h2:nth-of-type(1) { grid-column: 1; grid-row: 3; }
-ul:nth-of-type(1) { grid-column: 1; grid-row: 4; }
-h2:nth-of-type(2) { grid-column: 2; grid-row: 3; }
-ul:nth-of-type(2) { grid-column: 2; grid-row: 4; }
-
-/* Header elements span both columns and center their text */
-h1 {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  justify-self: center;
+/* Header centered above the columns */
+header {
   text-align: center;
+  max-width: calc(var(--col-w) * 2 + var(--col-gap));
+  margin: 0 auto;
 }
-h1 + p {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  justify-self: center;
-  text-align: center;
+
+/* Sections grid: two columns side by side */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--col-w));
+  column-gap: var(--col-gap);
+  row-gap: 0;
+  justify-content: center;
+  max-width: calc(var(--col-w) * 2 + var(--col-gap));
+  margin: 0 auto;
 }
 
 /* ---------- Header ---------- */
@@ -211,17 +201,10 @@ li:first-child a::after {
 
 /* ---------- Responsive: collapse to 1 column ---------- */
 @media (max-width: 780px) {
-  body {
-    grid-template-columns: minmax(0, 420px);
-    padding: 56px 16px 80px;
-  }
+  body { padding: 56px 16px 80px; }
+  main { grid-template-columns: minmax(0, 420px); }
   h1 { font-size: 26px; }
   h1 + p { margin-bottom: 40px; }
   li a { padding: 13px 16px; font-size: 12.5px; }
-
-  /* Stack both sites in a single column */
-  h2:nth-of-type(1) { grid-column: 1; grid-row: 3; }
-  ul:nth-of-type(1) { grid-column: 1; grid-row: 4; margin-bottom: 32px; }
-  h2:nth-of-type(2) { grid-column: 1; grid-row: 5; }
-  ul:nth-of-type(2) { grid-column: 1; grid-row: 6; }
+  section { margin-bottom: 32px; }
 }
