@@ -1,0 +1,402 @@
+[
+  {
+    "path": "/",
+    "score": 0.57,
+    "performance": 0.26,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/a-fondo",
+    "score": 0.57,
+    "performance": 0.3,
+    "accessibility": 0.54,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/alminuto",
+    "score": 0.72,
+    "performance": 0.56,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/avisolegal.html",
+    "score": 0.76,
+    "performance": 0.74,
+    "accessibility": 0.84,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia",
+    "score": 0.65,
+    "performance": 0.44,
+    "accessibility": 0.75,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/20260419/11517456/blue-origin-lanza-cohete-new-glenn-pieza-clave-programa-artemis-luna.html",
+    "score": 0.75,
+    "performance": 0.57,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer",
+    "score": 0.66,
+    "performance": 0.66,
+    "accessibility": 0.54,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/al-dia/20260407/11503134/javier-olleros-senalamos-culpa-deja-tierra-dolor-miedo.html",
+    "score": 0.89,
+    "performance": 0.9,
+    "accessibility": 0.93,
+    "best-practices": 0.73,
+    "seo": 1
+  },
+  {
+    "path": "/comer/al-dia/20260418/11516080/newsletter-comer-adios-mito-cavernicola-hipercarnivoro.html",
+    "score": 0.8,
+    "performance": 0.91,
+    "accessibility": 0.88,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/comer/al-dia/20260418/11516338/oscar-manresa-presenta-catalina-fundacion.html",
+    "score": 0.72,
+    "performance": 0.57,
+    "accessibility": 0.86,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/al-dia/20260419/11513063/crujiente-fuera-esponjoso-asi-langos-bocado-estrella-cocina-hungara-callejera.html",
+    "score": 0.79,
+    "performance": 0.71,
+    "accessibility": 0.91,
+    "best-practices": 0.54,
+    "seo": 1
+  },
+  {
+    "path": "/comer/beber/20260419/11503578/vino-semana-can-rius-d-espiells-2024-brl.html",
+    "score": 0.9,
+    "performance": 0.97,
+    "accessibility": 0.93,
+    "best-practices": 0.69,
+    "seo": 1
+  },
+  {
+    "path": "/comer/beber/20260419/11513885/cinco-utensilios-basicos-vino-aficionado-deberia-casa-wine-party.html",
+    "score": 0.88,
+    "performance": 0.85,
+    "accessibility": 0.93,
+    "best-practices": 0.73,
+    "seo": 1
+  },
+  {
+    "path": "/comprar",
+    "score": 0.76,
+    "performance": 0.97,
+    "accessibility": 0.65,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/comparativas/",
+    "score": 0.67,
+    "performance": 0.54,
+    "accessibility": 0.64,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/comprar/cultura-ocio/20260419/11515431/secuestro-mas-torpe-historia-futbol-espanol-serie-movistar-plus-imposible-verla-tiron-mkt-movi.html",
+    "score": 0.71,
+    "performance": 0.89,
+    "accessibility": 0.6,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/finanzas/20250611/10771684/mejores-microcreditos-rapidos-online-mkt-witm.html",
+    "score": 0.71,
+    "performance": 0.66,
+    "accessibility": 0.76,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/finanzas/20260204/11457374/cuentas-remuneradas-sin-nomina-mkt-klt.html",
+    "score": 0.75,
+    "performance": 0.95,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados",
+    "score": 0.7,
+    "performance": 0.73,
+    "accessibility": 0.63,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/mas-valorados/20240205/8697357/mejores-maquinas-palomitas-comparativa-mkt-eo.html",
+    "score": 0.74,
+    "performance": 0.75,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/mas-valorados/20260414/11505999/mejores-freidoras-aire-comparativas-mkt-eo.html",
+    "score": 0.75,
+    "performance": 0.94,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados/20260415/11512331/mejores-omega-3-comparativas-mkt-eo.html",
+    "score": 0.75,
+    "performance": 0.92,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados/20260419/11510440/mejores-cepillos-de-dientes-electricos-comparativas-mkt-eo.html",
+    "score": 0.7,
+    "performance": 0.73,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/moda-belleza/20260419/11515034/necesitas-50-acertar-dia-madre-10-ideas-funcionan-verdad.html",
+    "score": 0.77,
+    "performance": 1,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11514031/realme-gt-7-pro-120hz-carga-rapida-esta-arrasando-clave-nunca-queda-corto-mkt-alie.html",
+    "score": 0.77,
+    "performance": 0.98,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11514228/samsung-galaxy-watch-7-amoled-autonomia-larga-favorito-quiere-monitorear-salud-siempre-mkt-alie.html",
+    "score": 0.72,
+    "performance": 0.78,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11516023/mediamarkt-15-descuento-comprar-app-mkt-medi.html",
+    "score": 0.73,
+    "performance": 0.96,
+    "accessibility": 0.62,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/tecnologia/20260419/11513867/movil-lento-xiaomi-200-euros-son-empezaria-mirar-mkt-alie.html",
+    "score": 0.77,
+    "performance": 0.99,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/contacto.html",
+    "score": 0.72,
+    "performance": 0.56,
+    "accessibility": 0.86,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cookies-privacy-LV-popup.html",
+    "score": 0.82,
+    "performance": 0.96,
+    "accessibility": 0.84,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cribeo",
+    "score": 0.66,
+    "performance": 0.34,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/cultura",
+    "score": 0.61,
+    "performance": 0.31,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260419/11516771/autores-vanguardia-conocen-nuevos-vecinos-sant-jordi-fotos-tradicional.html",
+    "score": 0.76,
+    "performance": 0.63,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260419/11516958/sagrada-familia-icono-simbolo-turismo-donaire-barcelona-masificacion-venecia.html",
+    "score": 0.75,
+    "performance": 0.74,
+    "accessibility": 0.91,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/cultura/20260419/11516989/ro-ba.html",
+    "score": 0.85,
+    "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260419/11516994/han-kang-nobel-entrevista-tinta-novela.html",
+    "score": 0.76,
+    "performance": 0.68,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/cultura/20260419/11517483/marco-mezquida-trio-luminosa-fraternidad.html",
+    "score": 0.76,
+    "performance": 0.61,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260419/11517486/obra-faraonica-canal-d-urgell-llevo-agua-poniente-contada-traves-opera.html",
+    "score": 0.74,
+    "performance": 0.6,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/cultura/20260419/11517494/orchestra-baobab-belle-epoque-africana.html",
+    "score": 0.92,
+    "performance": 0.96,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 1
+  },
+  {
+    "path": "/cultura/20260419/11517498/110-viviendas-asequibles-sant-boi-llobregat-hachazo.html",
+    "score": 0.82,
+    "performance": 0.8,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/culturas",
+    "score": 0.62,
+    "performance": 0.37,
+    "accessibility": 0.69,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/culturas/20260417/11513173/felicidad-otros.html",
+    "score": 0.86,
+    "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/culturas/20260417/11515139/libros-recomendados-cultura-s-regalar-sant-jordi-2026.html",
+    "score": 0.63,
+    "performance": 0.47,
+    "accessibility": 0.85,
+    "best-practices": 0.35,
+    "seo": 0.83
+  },
+  {
+    "path": "/cultura/culturas/20260418/11512946/kilometros-libros.html",
+    "score": 0.77,
+    "performance": 0.67,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/musica/20260418/11517024/rosalia-dice-adios-barcelona-gran-despedida-altura-lux.html",
+    "score": 0.81,
+    "performance": 0.81,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes",
+    "score": 0.62,
+    "performance": 0.4,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes/20260419/11517091/animo.html",
+    "score": 0.76,
+    "performance": 0.77,
+    "accessibility": 0.93,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/deportes/20260419/11517475/ue-santboiana-evita-descenso-agonico-derbi-barca-25-17.html",
+    "score": 0.78,
+    "performance": 0.66,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes/20260419/11517537/manchester-city-lanza-premier-someter-arsenal.html",
+    "score": 0.76,
+    "performance": 0.56,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes/ciclismo/20260419/11517457/paula-blasi-primera-espanola-gana-amstel-gold-race-ayer-inscrita-carrera.html",
+    "score": 0.85,
+    "performance": 0.94,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  }
+]
