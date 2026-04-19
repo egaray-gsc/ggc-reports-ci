@@ -42,13 +42,17 @@ export default {
     },
 
     async 'puppeteer:after-goto'(page: any) {
-      // Fallback: si el banner sigue visible, click para aceptar
-      const btn = '#didomi-notice-agree-button';
+      // Esperamos a que el SDK de Didomi esté listo y aceptamos todo
       try {
-        await page.waitForSelector(btn, { timeout: 5000, visible: true });
-        await page.click(btn);
-        await page.waitForSelector(btn, { hidden: true, timeout: 5000 });
-        await new Promise(r => setTimeout(r, 1000));
+        await page.waitForFunction(
+          () => typeof (window as any).Didomi !== 'undefined',
+          { timeout: 10000 }
+        );
+        await page.evaluate(() => {
+          (window as any).Didomi.setUserAgreeToAll();
+        });
+        // Esperamos a que las cookies se escriban tras el consentimiento
+        await new Promise(r => setTimeout(r, 2000));
       } catch {}
     },
   },
