@@ -1,9 +1,11 @@
 export default {
   site: 'https://www.lavanguardia.com',
 
-  scanner: {
-    device: 'desktop',
-  },
+scanner: {
+  device: 'mobile',
+  maxRoutes: 100,
+  samplesPerRoute: 2,
+},
 
   puppeteerOptions: {
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
