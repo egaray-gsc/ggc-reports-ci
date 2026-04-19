@@ -38,6 +38,13 @@ jobs:
             --build-static \
             --output-path reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/
 
+      - name: Inject noindex meta into reports
+        run: |
+          find reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="utf-8">|<meta charset="utf-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+          find reports/lavanguardia.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+
       - name: Generate index.html
         run: node scripts/generate-index.js
 
