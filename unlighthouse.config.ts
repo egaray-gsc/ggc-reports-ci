@@ -19,15 +19,39 @@ export default {
     },
   ],
 
-  hooks: {
-    // Fallback: click en el banner si aparece tras cargar la página
+hooks: {
+    async 'puppeteer:before-goto'(page: any) {
+      // Opcional: Podrías inyectar cookies de consentimiento aquí 
+      // si prefieres no interactuar con el DOM.
+    },
+
     async 'puppeteer:after-goto'(page: any) {
+      const consentButtonSelector = '#didomi-notice-agree-button';
+      
       try {
-        await page.waitForSelector('#didomi-notice-agree-button', { timeout: 5000 });
-        await page.click('#didomi-notice-agree-button');
-        await new Promise(r => setTimeout(r, 2000));
-      } catch {
-        // Banner no apareció
+        // Esperamos a que el selector esté presente y sea visible
+        await page.waitForSelector(consentButtonSelector, { 
+          timeout: 5000, 
+          visible: true 
+        });
+        
+        // Hacemos click en el botón de aceptar
+        await page.click(consentButtonSelector);
+        
+        // Esperamos a que el banner desaparezca del DOM para evitar 
+        // que bloquee elementos en las capturas de Lighthouse
+        await page.waitForSelector(consentButtonSelector, { 
+          hidden: true, 
+          timeout: 5000 
+        });
+
+        // Opcional: Pequeño delay extra para asegurar que las animaciones de salida terminen
+        await new Promise(r => setTimeout(r, 1000));
+        
+        console.log('✅ Consentimiento aceptado correctamente.');
+      } catch (e) {
+        // El banner no apareció o ya estaba aceptado (por cookies persistentes)
+        console.log('ℹ️ No se detectó banner de consentimiento o ya fue aceptado.');
       }
     },
   },
