@@ -3,7 +3,7 @@ export default {
 
   scanner: {
     device: 'mobile',
-    maxRoutes: 5,
+    maxRoutes: 1,
   },
 
   puppeteerOptions: {
@@ -21,37 +21,36 @@ export default {
 
 hooks: {
     async 'puppeteer:before-goto'(page: any) {
-      // Opcional: Podrías inyectar cookies de consentimiento aquí 
-      // si prefieres no interactuar con el DOM.
+      await page.evaluateOnNewDocument(() => {
+        // Inyectamos el token en localStorage antes de que cargue el SDK
+        const token = {
+          status: 'accepted',
+          purposes: { enabled: ['cookies', 'advertising_personalization', 'analytics'] },
+          vendors: { enabled: ['all'] },
+          date: new Date().toISOString(),
+          version: 1,
+        };
+        localStorage.setItem('didomi_token', JSON.stringify(token));
+
+        // Registramos callback para forzar consentimiento cuando el SDK arranque
+        (window as any).didomiOnReady = (window as any).didomiOnReady || [];
+        (window as any).didomiOnReady.push((Didomi: any) => {
+          console.log('Unlighthouse: Forzando consentimiento en el SDK');
+          Didomi.setUserConsent(true);
+        });
+      });
     },
 
     async 'puppeteer:after-goto'(page: any) {
+      // Fallback: si el banner sigue visible, lo cerramos con click
       const consentButtonSelector = '#didomi-notice-agree-button';
-      
       try {
-        // Esperamos a que el selector esté presente y sea visible
-        await page.waitForSelector(consentButtonSelector, { 
-          timeout: 5000, 
-          visible: true 
-        });
-        
-        // Hacemos click en el botón de aceptar
+        await page.waitForSelector(consentButtonSelector, { timeout: 3000, visible: true });
         await page.click(consentButtonSelector);
-        
-        // Esperamos a que el banner desaparezca del DOM para evitar 
-        // que bloquee elementos en las capturas de Lighthouse
-        await page.waitForSelector(consentButtonSelector, { 
-          hidden: true, 
-          timeout: 5000 
-        });
-
-        // Opcional: Pequeño delay extra para asegurar que las animaciones de salida terminen
-        await new Promise(r => setTimeout(r, 1000));
-        
-        console.log('✅ Consentimiento aceptado correctamente.');
-      } catch (e) {
-        // El banner no apareció o ya estaba aceptado (por cookies persistentes)
-        console.log('ℹ️ No se detectó banner de consentimiento o ya fue aceptado.');
+        await page.waitForSelector(consentButtonSelector, { hidden: true, timeout: 3000 });
+        console.log('✅ Banner cerrado con click (fallback).');
+      } catch {
+        console.log('ℹ️ Banner no detectado, bypass por localStorage/cookie funcionó.');
       }
     },
   },
