@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const COOKIES_FILE = "/tmp/consent-cookies.json";
+const COOKIES_FILE = "/tmp/consent-cookies-20minutos.es.json";
 
 export default {
   site: "https://www.20minutos.es",
