@@ -1,17 +1,17 @@
-import fs from 'fs';
+import fs from "fs";
 
-const COOKIES_FILE = '/tmp/consent-cookies.json';
+const COOKIES_FILE = "/tmp/consent-cookies-mundodeportivo.com.json";
 
 export default {
-  site: 'https://www.mundodeportivo.com',
+  site: "https://www.mundodeportivo.com",
 
   scanner: {
-    device: 'mobile',
+    device: "mobile",
     maxRoutes: 50,
   },
 
   puppeteerOptions: {
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   },
 
   lighthouseOptions: {
@@ -19,14 +19,14 @@ export default {
   },
 
   hooks: {
-    async 'puppeteer:before-goto'(page: any) {
+    async "puppeteer:before-goto"(page: any) {
       // Carga cookies reales capturadas por el script de pre-consentimiento
       if (fs.existsSync(COOKIES_FILE)) {
-        const cookies = JSON.parse(fs.readFileSync(COOKIES_FILE, 'utf-8'));
+        const cookies = JSON.parse(fs.readFileSync(COOKIES_FILE, "utf-8"));
         try {
           await page.setCookie(...cookies);
         } catch (e: any) {
-          if (!e.message?.includes('Target closed')) throw e;
+          if (!e.message?.includes("Target closed")) throw e;
         }
       }
     },
