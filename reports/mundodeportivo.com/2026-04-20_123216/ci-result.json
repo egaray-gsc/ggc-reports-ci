@@ -1,0 +1,394 @@
+[
+  {
+    "path": "/",
+    "score": 0.62,
+    "performance": 0.27,
+    "accessibility": 0.73,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20231225/1002159791/expertos-confirman-como-afecta-cambio-climatico-vino-son-todas-alteraciones-sufre-smd.html",
+    "score": 0.63,
+    "performance": 0.37,
+    "accessibility": 0.73,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20250130/1002397735/karl-fagerstroem-experto-tabaquismo-78-anos-atiza-espana-restricciones-tabaco-esta-lejos-consideraria-efectivo-lograr-ese-cambio-dct.html",
+    "score": 0.71,
+    "performance": 0.75,
+    "accessibility": 0.71,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20250417/1002447452/adios-bazares-chinos-reinventan-nuevas-tiendas-arrasaran-espana-dct.html",
+    "score": 0.72,
+    "performance": 0.71,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20250428/1002453749/sam-altman-ceo-openai-confiesa-decirle-dos-palabras-chatgpt-le-cuesta-millones-dolares-dct.html",
+    "score": 0.69,
+    "performance": 0.55,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20250428/1002453796/hacienda-confirma-documento-permite-recuperar-1200-euros-declaracion-renta-finanzas-dct.html",
+    "score": 0.71,
+    "performance": 0.68,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20250530/1002474415/salvador-dali-confeso-gran-secreto-dos-curiosos-trucos-logro-mantener-bigote-punta-smd-hst.html",
+    "score": 0.71,
+    "performance": 0.65,
+    "accessibility": 0.75,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20251016/1002551773/jose-luis-gutierrez-abogado-rosario-porto-pedi-cosas-me-dieron-convencido-escribio-morir-dct.html",
+    "score": 0.76,
+    "performance": 0.76,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/actualidad/20251222/1002590844/batacazo-psoe-extremadura-guardiola-gana-vox-gran-victorioso-noche-dct.html",
+    "score": 0.66,
+    "performance": 0.5,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260112/1002600190/abraham-galera-propietario-restaurante-barcelona-camarero-me-defender-necesidad-cobra-1-50-euros-hora-gano-pidiendo-calle-trabajar-dnr-dct.html",
+    "score": 0.62,
+    "performance": 0.37,
+    "accessibility": 0.73,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260204/1002614762/gigante-americano-comida-italiana-llega-espana-ciudad-abierto-primer-restaurante-dct.html",
+    "score": 0.62,
+    "performance": 0.27,
+    "accessibility": 0.8,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260209/1002617371/aviso-emergencia-cuba-partir-adios-volar-pais-nuevo-aviso-dct.html",
+    "score": 0.66,
+    "performance": 0.46,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260210/1002618077/gabriel-rufian-rompe-silencio-aclara-todas-especulaciones-sobre-gira-hablar-me-llame-hablar-hay-viene-dct.html",
+    "score": 0.68,
+    "performance": 0.56,
+    "accessibility": 0.78,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260210/1002618512/ue-cambia-normas-partir-aplicara-modelo-meloni-acelerar-permitir-deportaciones-toda-europa-dct.html",
+    "score": 0.71,
+    "performance": 0.65,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260211/1002618786/dgt-pone-sobre-mesa-baliza-v16-no-impide-multa-200-euros-repuesto-obligatorio-coche-dct.html",
+    "score": 0.7,
+    "performance": 0.59,
+    "accessibility": 0.8,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260211/1002618893/gabriel-rufian-sobre-oscar-puente-oscar-puente-mazon-responsable-cosas-quiza-deberia-dimitir-dct.html",
+    "score": 0.63,
+    "performance": 0.27,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260211/1002619148/david-canales-empresario-fraude-laboral-trabajadores-mayor-lacra-ultimos-anos-normal-tengamos-quitar-poner-complementos-salariales-frenarlo-ngc-dct.html",
+    "score": 0.69,
+    "performance": 0.62,
+    "accessibility": 0.74,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260212/1002619563/ministerio-sanidad-advierte-detecta-crecimiento-alimentos-importados-mal-mayoria-marruecos-dct.html",
+    "score": 0.69,
+    "performance": 0.61,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260212/1002619614/confirmado-justicia-determina-irse-hora-punto-trabajo-motivo-despido-disciplinario-apoya-estatuto-trabajadores-dct.html",
+    "score": 0.63,
+    "performance": 0.33,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260214/1002620665/gabriel-rufian-mi-me-parece-clase-trabajadora-cornella-vallecas-me-catalan-independentista-intentar-luchar-gente-dct.html",
+    "score": 0.69,
+    "performance": 0.59,
+    "accessibility": 0.78,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260214/1004146145/loteria-nacional-sabado-directo-comprobar-numeros-premios-hoy-5-marzo.html",
+    "score": 0.74,
+    "performance": 0.61,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 1
+  },
+  {
+    "path": "/actualidad/20260215/1002621031/gabriel-rufian-le-llueven-me-gusta-llega-decir-ultimo-penalti-senalado-real-madrid-dct.html",
+    "score": 0.7,
+    "performance": 0.42,
+    "accessibility": 0.87,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/actualidad/20260215/1002621116/angel-gaitan-experto-mecanico-sabeis-conductor-vehiculo-electrico-esto-me-pasar-mi-son-cosas-mundo-comprarse-cmt-dct.html",
+    "score": 0.63,
+    "performance": 0.32,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260216/1002621891/oficial-gobierno-confirma-obligara-medir-tiempos-espera-pacientes-todas-consultas-hospitalarias-dct.html",
+    "score": 0.68,
+    "performance": 0.59,
+    "accessibility": 0.74,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260217/1004130554/nuevas-galletas-1-45-euros-vuelan-mercadona-me-han-sorprendido-dct.html",
+    "score": 0.7,
+    "performance": 0.62,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260217/1004130557/aterriza-primera-vez-espana-marca-ropa-internacional-sera-ubicacion-barcelona-lcl-dct.html",
+    "score": 0.62,
+    "performance": 0.28,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260218/1004131131/barcelona-saca-latigo-multara-1-500-euros-quienes-sobrepasen-decibelios-calle-lcl-dct.html",
+    "score": 0.61,
+    "performance": 0.26,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260219/1004138277/sorteo-bonoloto-deja-dineral-unico-acertante-espana-dct.html",
+    "score": 0.68,
+    "performance": 0.57,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260219/1004138846/sorteo-bonoloto-deja-dineral-lunes-2-marzo-unico-acertante-espana-dct.html",
+    "score": 0.69,
+    "performance": 0.61,
+    "accessibility": 0.77,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260219/1004145395/sorteo-bonoloto-miercoles-4-deja-dineral-unico-acertante-espana-dct.html",
+    "score": 0.69,
+    "performance": 0.64,
+    "accessibility": 0.74,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260219/1004146825/sorteo-bonoloto-jueves-5-marzo-deja-dineral-unico-acertante-espana-dct.html",
+    "score": 0.68,
+    "performance": 0.59,
+    "accessibility": 0.74,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260220/1004132053/gregorio-hernandez-experto-finanzas-hay-quitar-impuesto-sucesiones-objetivo-joven-20-anos-compre-buena-casa-herede-casa-padres-tenga-60-70-expt-dnr-dct.html",
+    "score": 0.73,
+    "performance": 0.65,
+    "accessibility": 0.86,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260220/1004132101/andres-millan-abogado-estes-obligado-siempre-compensa-pagar-irpf-nunca-hacienda-llames-ponerte-deducciones-bonificaciones-finanzas-dct.html",
+    "score": 0.7,
+    "performance": 0.56,
+    "accessibility": 0.78,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260221/1004132120/gisele-pelicot-describe-primera-vez-durisimo-momento-descubrio-le-hizo-marido-esta-cama-fotomontaje-dct.html",
+    "score": 0.63,
+    "performance": 0.29,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260221/1004132198/europa-planta-abre-puerta-prohibir-baliza-v-16-espana-incumplir-normas-ue-cmt-dct.html",
+    "score": 0.62,
+    "performance": 0.29,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260221/1004145385/sorteo-euromillones-deja-pastizal-unico-acertante-espana-dct.html",
+    "score": 0.68,
+    "performance": 0.51,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004132748/jorge-branger-27-anos-preocupado-mi-pension-pagamos-nietos-abuelos-tenian-5-7-hijos-problema-edad-jubilacion-65-anos-esperanza-vida-55-dnr-dct.html",
+    "score": 0.63,
+    "performance": 0.27,
+    "accessibility": 0.78,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004132865/ley-propiedad-horizontal-clara-propietario-quiere-poner-esto-balcon-vecinos-prohibirselo-obligarle-retirar-obra-dct.html",
+    "score": 0.7,
+    "performance": 0.59,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004138259/sorteo-primitiva-deja-pastizal-unico-acertante-espana-bote-mas-alto-historia-dct.html",
+    "score": 0.71,
+    "performance": 0.63,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004144669/sorteo-primitiva-deja-pastizal-unico-acertante-espana-bote-mas-alto-historia-dct.html",
+    "score": 0.71,
+    "performance": 0.58,
+    "accessibility": 0.83,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004146821/sorteo-primitiva-deja-pastizal-jueves-5-marzo-unico-acertante-espana-bote-mas-alto-historia.html",
+    "score": 0.73,
+    "performance": 0.68,
+    "accessibility": 0.82,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260222/1004146823/sorteo-primitiva-deja-pastizal-unico-acertante-espana-bote-mas-alto-historia-dct.html",
+    "score": 0.72,
+    "performance": 0.67,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260223/1004132943/llega-lidl-maquina-hielo-salva-barbacoas-cumpleanos-depender-congelador-smd.html",
+    "score": 0.7,
+    "performance": 0.56,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260223/1004132950/sorteo-gordo-primitiva-dineral-unico-acertante-espana-domingo-1-marzo-dct.html",
+    "score": 0.63,
+    "performance": 0.29,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260224/1004138816/precio-luz-hoy-lunes-2-marzo-franjas-tramos-cuando-mas-barata-dct.html",
+    "score": 0.7,
+    "performance": 0.58,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260224/1004144648/precio-luz-hoy-miercoles-4-marzo-franjas-tramos-cuando-mas-barata-dct.html",
+    "score": 0.71,
+    "performance": 0.62,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260224/1004146090/precio-luz-hoy-jueves-5-marzo-franjas-tramos-cuando-mas-barata-dct.html",
+    "score": 0.62,
+    "performance": 0.26,
+    "accessibility": 0.78,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260224/1004146802/precio-luz-hoy-viernes-6-marzo-franjas-tramos-cuando-mas-barata-dct.html",
+    "score": 0.72,
+    "performance": 0.66,
+    "accessibility": 0.81,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/actualidad/20260225/1004134310/elisa-mouliaa-rompe-silencio-revela-conversacion-denunciante-errejon-relato-terrible-desarrollo-panico-comida-dejo-comer-dct.html",
+    "score": 0.64,
+    "performance": 0.31,
+    "accessibility": 0.82,
+    "best-practices": 0.5,
+    "seo": 0.92
+  }
+]
