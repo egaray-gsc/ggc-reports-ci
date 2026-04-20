@@ -4,10 +4,10 @@ Sitio estático en GitHub Pages que acumula informes de rendimiento generados co
 
 ## Sitios auditados
 
-| Sitio | Config | Rutas máx. |
-|---|---|---|
-| [lavanguardia.com](https://www.lavanguardia.com) | `unlighthouse-lavanguardia.config.ts` | 50 |
-| [mundodeportivo.com](https://www.mundodeportivo.com) | `unlighthouse-mundodeportivo.config.ts` | 1 |
+| Sitio                                                | Config                                  | Rutas máx. |
+| ---------------------------------------------------- | --------------------------------------- | ---------- |
+| [lavanguardia.com](https://www.lavanguardia.com)     | `unlighthouse-lavanguardia.config.ts`   | 50         |
+| [mundodeportivo.com](https://www.mundodeportivo.com) | `unlighthouse-mundodeportivo.config.ts` | 50         |
 
 ## Lanzar una auditoría
 
