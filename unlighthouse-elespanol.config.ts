@@ -16,12 +16,11 @@ export default {
 
   lighthouseOptions: {
     disableStorageReset: true,
-    throttlingMethod: "provided",
+    onlyCategories: ["accessibility", "best-practices", "seo"],
   },
 
   hooks: {
     async "puppeteer:before-goto"(page: any) {
-      // Carga cookies reales capturadas por el script de pre-consentimiento
       if (fs.existsSync(COOKIES_FILE)) {
         const cookies = JSON.parse(fs.readFileSync(COOKIES_FILE, "utf-8"));
         try {
