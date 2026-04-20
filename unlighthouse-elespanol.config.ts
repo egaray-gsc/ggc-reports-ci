@@ -16,6 +16,7 @@ export default {
 
   lighthouseOptions: {
     disableStorageReset: true,
+    throttlingMethod: "provided",
   },
 
   hooks: {
