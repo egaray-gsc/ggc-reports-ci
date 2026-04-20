@@ -1,24 +1,26 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const REPORTS_DIR = path.join(__dirname, '..', 'reports');
-const OUTPUT_FILE = path.join(__dirname, '..', 'index.html');
+const REPORTS_DIR = path.join(__dirname, "..", "reports");
+const OUTPUT_FILE = path.join(__dirname, "..", "index.html");
 
 function getReports() {
   const groups = {};
 
   if (!fs.existsSync(REPORTS_DIR)) return groups;
 
-  const domains = fs.readdirSync(REPORTS_DIR, { withFileTypes: true })
-    .filter(d => d.isDirectory());
+  const domains = fs
+    .readdirSync(REPORTS_DIR, { withFileTypes: true })
+    .filter((d) => d.isDirectory());
 
   for (const domain of domains) {
     const domainPath = path.join(REPORTS_DIR, domain.name);
-    const timestamps = fs.readdirSync(domainPath, { withFileTypes: true })
-      .filter(d => d.isDirectory())
-      .map(d => d.name)
+    const timestamps = fs
+      .readdirSync(domainPath, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name)
       .sort()
       .reverse();
 
@@ -34,7 +36,7 @@ function buildHTML(groups) {
   const domainNames = Object.keys(groups).sort();
   const hasReports = domainNames.length > 0;
 
-  let reportSections = '';
+  let reportSections = "";
 
   if (!hasReports) {
     reportSections = `
@@ -42,12 +44,20 @@ function buildHTML(groups) {
   } else {
     for (const domain of domainNames) {
       const items = groups[domain]
-        .map(ts => `        <li><a href="reports/${domain}/${ts}/index.html">&rarr; ${ts}</a></li>`)
-        .join('\n');
+        .map(
+          (ts) =>
+            `          <li><a href="reports/${domain}/${ts}/index.html">${ts}</a></li>`,
+        )
+        .join("\n");
+
+      const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
 
       reportSections += `
       <section>
-        <h2>${domain}</h2>
+        <div class="card-header">
+          <img src="${faviconUrl}" alt="${domain}" width="24" height="24">
+          <h2>${domain}</h2>
+        </div>
         <ul>
 ${items}
         </ul>
@@ -78,7 +88,9 @@ ${items}
 
 const groups = getReports();
 const html = buildHTML(groups);
-fs.writeFileSync(OUTPUT_FILE, html, 'utf-8');
+fs.writeFileSync(OUTPUT_FILE, html, "utf-8");
 
 const count = Object.values(groups).reduce((sum, ts) => sum + ts.length, 0);
-console.log(`index.html generated — ${Object.keys(groups).length} domain(s), ${count} report(s)`);
+console.log(
+  `index.html generated — ${Object.keys(groups).length} domain(s), ${count} report(s)`,
+);
