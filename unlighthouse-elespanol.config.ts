@@ -7,7 +7,7 @@ export default {
 
   scanner: {
     device: "mobile",
-    maxRoutes: 50,
+    maxRoutes: 1,
   },
 
   puppeteerOptions: {
