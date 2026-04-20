@@ -19,6 +19,7 @@ const OUTPUT = process.argv[3] || `/tmp/consent-cookies-${domain}.json`;
 // Selectores de botón de aceptación para distintos CMPs
 const CONSENT_SELECTORS = [
   "#didomi-notice-agree-button", // Didomi
+  ".mrf-button.accept", // 20minutos
   "#onetrust-accept-btn-handler", // OneTrust
   ".fc-cta-consent", // Funding Choices (Google)
   '[data-testid="GDPR-accept"]', // custom
