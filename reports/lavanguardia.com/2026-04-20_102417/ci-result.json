@@ -1,0 +1,394 @@
+[
+  {
+    "path": "/",
+    "score": 0.63,
+    "performance": 0.29,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/a-fondo",
+    "score": 0.61,
+    "performance": 0.31,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/alminuto",
+    "score": 0.76,
+    "performance": 0.82,
+    "accessibility": 0.72,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/avisolegal.html",
+    "score": 0.82,
+    "performance": 0.97,
+    "accessibility": 0.84,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia",
+    "score": 0.65,
+    "performance": 0.58,
+    "accessibility": 0.6,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/20260419/11517456/blue-origin-lanza-cohete-new-glenn-pieza-clave-programa-artemis-luna.html",
+    "score": 0.73,
+    "performance": 0.59,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/ciencia/20260420/11486800/aplicacion-movil-ia-tratar-mejor-heridas-cronicas.html",
+    "score": 0.67,
+    "performance": 0.39,
+    "accessibility": 0.95,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comer",
+    "score": 0.58,
+    "performance": 0.25,
+    "accessibility": 0.67,
+    "best-practices": 0.46,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/al-dia/20260407/11503134/javier-olleros-senalamos-culpa-deja-tierra-dolor-miedo.html",
+    "score": 0.74,
+    "performance": 0.53,
+    "accessibility": 0.87,
+    "best-practices": 0.54,
+    "seo": 1
+  },
+  {
+    "path": "/comer/al-dia/20260418/11516338/oscar-manresa-presenta-catalina-fundacion.html",
+    "score": 0.8,
+    "performance": 0.78,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/al-dia/20260419/11513063/crujiente-fuera-esponjoso-asi-langos-bocado-estrella-cocina-hungara-callejera.html",
+    "score": 0.78,
+    "performance": 0.8,
+    "accessibility": 0.87,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/al-dia/20260420/11517499/que-pasaria-restaurantes-aplicaran-precios-dinamicos.html",
+    "score": 0.82,
+    "performance": 0.9,
+    "accessibility": 0.93,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/beber/20260420/11514000/descorchar-botella-vino-esta-picada-tiras-puedes-cdv.html",
+    "score": 0.87,
+    "performance": 0.82,
+    "accessibility": 0.93,
+    "best-practices": 0.73,
+    "seo": 1
+  },
+  {
+    "path": "/comer/recetas/20260420/11516181/regalate-capricho-gourmet-calamar-relleno-arroz-negro-setas.html",
+    "score": 0.66,
+    "performance": 0.35,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comer/sitios/20260420/11516190/5-restaurantes-barcelona-tradicion-sirve-caracter-pedir-permiso.html",
+    "score": 0.73,
+    "performance": 0.64,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar",
+    "score": 0.66,
+    "performance": 0.56,
+    "accessibility": 0.65,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/comparativas/",
+    "score": 0.68,
+    "performance": 0.57,
+    "accessibility": 0.64,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/comprar/cultura-ocio/20260420/11515978/aun-estas-asistir-conciertos-bad-bunny-espana-asi-como-puedes-conseguir-entradas-mas-asequibles-mkt-heti.html",
+    "score": 0.75,
+    "performance": 0.91,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/finanzas/20251020/11175760/5-depositos-plazo-fijo-tipos-interes-bce-mkt-klt.html",
+    "score": 0.79,
+    "performance": 0.97,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/finanzas/20260204/11457374/cuentas-remuneradas-sin-nomina-mkt-klt.html",
+    "score": 0.74,
+    "performance": 0.9,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados",
+    "score": 0.75,
+    "performance": 0.68,
+    "accessibility": 0.82,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/comprar/mas-valorados/20240205/8697357/mejores-maquinas-palomitas-comparativa-mkt-eo.html",
+    "score": 0.74,
+    "performance": 0.77,
+    "accessibility": 0.77,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/mas-valorados/20260414/11505999/mejores-freidoras-aire-comparativas-mkt-eo.html",
+    "score": 0.77,
+    "performance": 1,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados/20260415/11512331/mejores-omega-3-comparativas-mkt-eo.html",
+    "score": 0.77,
+    "performance": 1,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/mas-valorados/20260419/11510440/mejores-cepillos-de-dientes-electricos-comparativas-mkt-eo.html",
+    "score": 0.76,
+    "performance": 0.98,
+    "accessibility": 0.71,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/moda-belleza/20260419/11515034/necesitas-50-acertar-dia-madre-10-ideas-funcionan-verdad.html",
+    "score": 0.76,
+    "performance": 0.93,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11514031/realme-gt-7-pro-120hz-carga-rapida-esta-arrasando-clave-nunca-queda-corto-mkt-alie.html",
+    "score": 0.77,
+    "performance": 0.99,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11514228/samsung-galaxy-watch-7-amoled-autonomia-larga-favorito-quiere-monitorear-salud-siempre-mkt-alie.html",
+    "score": 0.77,
+    "performance": 0.99,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260419/11516023/mediamarkt-15-descuento-comprar-app-mkt-medi.html",
+    "score": 0.71,
+    "performance": 0.86,
+    "accessibility": 0.62,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/comprar/rebajas-ofertas/20260420/11517773/mejores-chollos-amazon-camaras-digitales-20-abril-descuentos-47.html",
+    "score": 0.77,
+    "performance": 0.98,
+    "accessibility": 0.67,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/contacto.html",
+    "score": 0.75,
+    "performance": 0.72,
+    "accessibility": 0.8,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cookies-privacy-LV-popup.html",
+    "score": 0.82,
+    "performance": 0.97,
+    "accessibility": 0.84,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cribeo",
+    "score": 0.72,
+    "performance": 0.51,
+    "accessibility": 0.85,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/cultura",
+    "score": 0.64,
+    "performance": 0.33,
+    "accessibility": 0.73,
+    "best-practices": 0.5,
+    "seo": 1
+  },
+  {
+    "path": "/cultura/20260419/11517479/por-que-no-escribo-nada-documental-ilumina-cara-mas-desconocida-carmen-laforet.html",
+    "score": 0.79,
+    "performance": 0.71,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11515364/valerie-belin-mujeres-han-inculcado-nuestro-seduccion.html",
+    "score": 0.82,
+    "performance": 0.83,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11516280/ignasi-taltavull-tomas-fuentes-la-ruina-comedia-humor-podcast.html",
+    "score": 0.79,
+    "performance": 0.68,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11517505/l-aranna-rodoreda-redoblat.html",
+    "score": 0.83,
+    "performance": 0.84,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11517560/llamabamos-corpinnat.html",
+    "score": 0.79,
+    "performance": 0.78,
+    "accessibility": 0.95,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11517561/prince-decimo-ano-resucito-muerte-aniversario.html",
+    "score": 0.84,
+    "performance": 0.89,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/20260420/11517589/jamaica-kincaid-germen-trump-esta-inicio-eeuu.html",
+    "score": 0.85,
+    "performance": 0.97,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/culturas",
+    "score": 0.6,
+    "performance": 0.31,
+    "accessibility": 0.66,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes",
+    "score": 0.59,
+    "performance": 0.34,
+    "accessibility": 0.58,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes/20260419/11517693/educacion-superior.html",
+    "score": 0.71,
+    "performance": 0.56,
+    "accessibility": 0.91,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/deportes/fc-barcelona/20260419/11517569/vez-barcelona.html",
+    "score": 0.74,
+    "performance": 0.72,
+    "accessibility": 0.91,
+    "best-practices": 0.46,
+    "seo": 0.85
+  },
+  {
+    "path": "/deportes/fc-barcelona/20260420/11517496/entrevista-lluis-canut-la-vida-en-directe-nunez-tenia-morenos-laporta-hackers-redes.html",
+    "score": 0.69,
+    "performance": 0.44,
+    "accessibility": 0.91,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/deportes/fc-barcelona/20260420/11517578/memoria-ronaldinho.html",
+    "score": 0.74,
+    "performance": 0.65,
+    "accessibility": 0.95,
+    "best-practices": 0.5,
+    "seo": 0.85
+  },
+  {
+    "path": "/deportes/fc-barcelona/20260420/11517835/bastoni-inter-fc-barcelona-fichajes.html",
+    "score": 0.81,
+    "performance": 0.89,
+    "accessibility": 0.93,
+    "best-practices": 0.5,
+    "seo": 0.92
+  },
+  {
+    "path": "/deportes/resultados",
+    "score": 0.77,
+    "performance": 0.78,
+    "accessibility": 0.79,
+    "best-practices": 0.5,
+    "seo": 1
+  }
+]
