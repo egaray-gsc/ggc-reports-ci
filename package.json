@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "preview": "serve . -l 3000",
+    "audit:elespanol": "node scripts/accept-cookies.js https://www.elespanol.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-elespanol.config.ts --build-static --output-path reports/elespanol.com/local",
+    "audit:lavanguardia": "node scripts/accept-cookies.js https://www.lavanguardia.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-lavanguardia.config.ts --build-static --output-path reports/lavanguardia.com/local",
+    "audit:mundodeportivo": "node scripts/accept-cookies.js https://www.mundodeportivo.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-mundodeportivo.config.ts --build-static --output-path reports/mundodeportivo.com/local",
+    "audit:20minutos": "node scripts/accept-cookies.js https://www.20minutos.es && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-20minutos.config.ts --build-static --output-path reports/20minutos.es/local",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

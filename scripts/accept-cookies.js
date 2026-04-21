@@ -12,9 +12,12 @@ const fs = require("fs");
 const path = require("path");
 const { URL } = require("url");
 
+const os = require("os");
+
 const SITE = process.argv[2] || "https://www.lavanguardia.com";
 const domain = new URL(SITE).hostname.replace(/^www\./, "");
-const OUTPUT = process.argv[3] || `/tmp/consent-cookies-${domain}.json`;
+const OUTPUT =
+  process.argv[3] || path.join(os.tmpdir(), `consent-cookies-${domain}.json`);
 
 // Selectores de botón de aceptación para distintos CMPs
 const CONSENT_SELECTORS = [

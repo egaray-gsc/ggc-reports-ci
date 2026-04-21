@@ -1,13 +1,19 @@
 import fs from "fs";
+import os from "os";
+import path from "path";
 
-const COOKIES_FILE = "/tmp/consent-cookies-elespanol.com.json";
+const COOKIES_FILE = path.join(
+  os.tmpdir(),
+  "consent-cookies-elespanol.com.json",
+);
 
 export default {
   site: "https://www.elespanol.com",
 
   scanner: {
     device: "mobile",
-    maxRoutes: 1,
+    maxRoutes: 5,
+    exclude: [/^\/$/],
   },
 
   puppeteerOptions: {
@@ -16,7 +22,8 @@ export default {
 
   lighthouseOptions: {
     disableStorageReset: true,
-    onlyCategories: ["accessibility", "best-practices", "seo"],
+    throttlingMethod: "provided",
+    maxWaitForLoad: 90000,
   },
 
   hooks: {
