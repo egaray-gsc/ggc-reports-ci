@@ -1,0 +1,402 @@
+[
+  {
+    "path": "/",
+    "score": 0.85,
+    "performance": 0.74,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/",
+    "score": 0.9,
+    "performance": 0.93,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/2026-04-19/son-de-la-selva-rap-indigena-murui-en-la-triple-frontera-amazonica.html",
+    "score": 0.8,
+    "performance": 0.65,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.85
+  },
+  {
+    "path": "/america-colombia/2026-04-20/el-difunto-cardenal-pedro-rubiano-es-acusado-por-abusos-sexuales.html",
+    "score": 0.87,
+    "performance": 0.86,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/2026-04-20/el-pais-entrega-al-vaticano-un-informe-con-testimonios-contra-13-acusados-de-pederastia-en-la-iglesia-de-colombia.html",
+    "score": 0.88,
+    "performance": 0.93,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/2026-04-20/la-colombiana-yuvelis-natalia-moreno-blanco-gana-con-25-anos-el-premio-goldman-por-oponerse-al-fracking.html",
+    "score": 0.83,
+    "performance": 0.95,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america-colombia/2026-04-21/los-colombianos-varados-en-el-congo-tras-ser-expulsados-de-estados-unidos-nunca-pense-conocer-africa-en-estas-circunstancias.html",
+    "score": 0.89,
+    "performance": 0.94,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-futura/",
+    "score": 0.84,
+    "performance": 0.92,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-futura/2026-04-20/al-rescate-del-simbolo-nacional-de-panama-la-rana-dorada.html",
+    "score": 0.9,
+    "performance": 0.98,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-futura/2026-04-21/comienza-la-conferencia-del-acuerdo-de-escazu-america-latina-y-el-caribe-deben-fortalecer-su-democracia-ambiental.html",
+    "score": 0.83,
+    "performance": 0.88,
+    "accessibility": 0.87,
+    "best-practices": 0.73,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/",
+    "score": 0.89,
+    "performance": 0.91,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-16/lula-trump-no-tiene-derecho-a-levantarse-por-la-manana-y-amenazar-a-un-pais.html",
+    "score": 0.87,
+    "performance": 0.85,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-19/en-la-caracas-sin-maduro-ahorita-todo-es-prioridad.html",
+    "score": 0.84,
+    "performance": 0.75,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-20/una-empresa-respaldada-por-washington-compra-la-unica-compania-que-produce-tierras-raras-en-brasil.html",
+    "score": 0.88,
+    "performance": 0.92,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-21/arevalo-se-anota-su-mayor-triunfo-politico-con-el-fin-del-mandato-de-la-fiscal-general-en-guatemala.html",
+    "score": 0.87,
+    "performance": 0.96,
+    "accessibility": 0.87,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-21/escrutinio-en-camara-lenta-en-peru-la-desconfianza-lastra-la-legitimidad-de-la-primera-vuelta-por-la-presidencia.html",
+    "score": 0.9,
+    "performance": 0.97,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/economia/",
+    "score": 0.91,
+    "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/",
+    "score": 0.87,
+    "performance": 0.81,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-03-31/centroamerica-y-los-vientos-que-soplan.html",
+    "score": 0.87,
+    "performance": 0.86,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-03-31/la-verdad-en-disputa-democracia-desinformacion-y-la-urgencia-de-reconstruir-el-espacio-comun-en-iberoamerica.html",
+    "score": 0.81,
+    "performance": 0.81,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-04-08/la-democracia-no-se-entrena-gratis.html",
+    "score": 0.87,
+    "performance": 0.87,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-04-14/hacia-una-democracia-de-izquierda.html",
+    "score": 0.81,
+    "performance": 0.82,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/sociedad/",
+    "score": 0.91,
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/aniversario/",
+    "score": 0.9,
+    "performance": 0.94,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/aniversario/2026-04-20/antonio-munoz-molina-escritor-las-fuerzas-mas-poderosas-estan-desmontando-el-periodismo.html",
+    "score": 0.89,
+    "performance": 0.96,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/argentina/",
+    "score": 0.88,
+    "performance": 0.88,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/argentina/2026-04-21/javier-milei-se-enfrenta-a-la-disyuntiva-de-bajar-la-inflacion-o-reactivar-la-actividad-economica.html",
+    "score": 0.9,
+    "performance": 0.98,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/argentina/2026-04-21/leon-xiv-ahora-si-se-le-escucho-la-voz.html",
+    "score": 0.89,
+    "performance": 0.95,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/abel-fernandez-gonzalez/",
+    "score": 0.89,
+    "performance": 0.94,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/alejandro-ivan-lopez-ramirez/",
+    "score": 0.87,
+    "performance": 0.85,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/alejandro-mendoza-arriaga/",
+    "score": 0.87,
+    "performance": 0.85,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/ana-maria-puentes-pulido/",
+    "score": 0.89,
+    "performance": 0.93,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/anatxu-zabalbeascoa/",
+    "score": 0.88,
+    "performance": 0.92,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/andres-mourenza-urbina/",
+    "score": 0.81,
+    "performance": 0.65,
+    "accessibility": 0.93,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/anna-mayer/",
+    "score": 0.88,
+    "performance": 0.91,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/beatriz-lecumberri/",
+    "score": 0.89,
+    "performance": 0.95,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/",
+    "score": 0.84,
+    "performance": 0.76,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-17/maria-folguera-las-secciones-de-comentarios-en-prensa-deberian-pasar-a-llamarse-desprecios.html",
+    "score": 0.84,
+    "performance": 0.74,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-20/los-duenos-del-estado-agujeros-negros-en-la-administracion-y-sus-altos-funcionarios.html",
+    "score": 0.88,
+    "performance": 0.9,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-21/angeles-alcoholicos-enganchados-a-las-drogas-y-con-tendencia-a-cometer-delitos.html",
+    "score": 0.86,
+    "performance": 0.84,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-21/el-extrano-o-el-curioso-caso-de-john-banville-y-benjamin-black.html",
+    "score": 0.86,
+    "performance": 0.93,
+    "accessibility": 0.86,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/chile/",
+    "score": 0.85,
+    "performance": 0.75,
+    "accessibility": 1,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/",
+    "score": 0.84,
+    "performance": 0.92,
+    "accessibility": 0.96,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/2026-04-20/bruce-el-loro-discapacitado-que-acabo-dominando-a-su-bandada.html",
+    "score": 0.84,
+    "performance": 0.73,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/2026-04-21/el-exito-de-artemis-2-en-la-luna-deja-a-europa-en-vilo.html",
+    "score": 0.89,
+    "performance": 0.96,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/2026-04-21/rafael-bachiller-astronomo-asi-imagino-a-los-extraterrestres-como-pequenos-microbios.html",
+    "score": 0.89,
+    "performance": 0.97,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/clima-y-medio-ambiente/2026-04-21/el-lince-iberico-blanco-hallado-en-octubre-en-jaen-esta-cambiando-de-color.html",
+    "score": 0.88,
+    "performance": 0.93,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/",
+    "score": 0.89,
+    "performance": 0.94,
+    "accessibility": 0.96,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/2026-04-20/gonzalo-celorio-premio-cervantes-la-lengua-espanola-no-fue-la-lengua-de-la-conquista-sino-la-de-la-independencia.html",
+    "score": 0.85,
+    "performance": 0.96,
+    "accessibility": 0.78,
+    "best-practices": 0.73,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/2026-04-21/como-explicarlo-nuevas-palabras-para-un-nuevo-mundo.html",
+    "score": 0.86,
+    "performance": 0.84,
+    "accessibility": 0.95,
+    "best-practices": 0.73,
+    "seo": 0.92
+  }
+]
