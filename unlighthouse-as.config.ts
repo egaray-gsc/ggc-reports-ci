@@ -59,5 +59,44 @@ export default {
         if (!e.message?.includes("Target closed")) throw e;
       }
     },
+
+    async "puppeteer:after-goto"(page: any) {
+      const SELECTORS = [
+        'astro-island[props*="acceptAll"] button',
+        'button[onclick*="acceptConsentWall"]',
+        ".pmConsentWall-button",
+      ];
+
+      // Esperar a que el Astro island se hidrate (puede tardar unos segundos)
+      for (const selector of SELECTORS) {
+        try {
+          await page.waitForSelector(selector, {
+            timeout: 8000,
+            visible: true,
+          });
+          await page.click(selector);
+          await new Promise((r: any) => setTimeout(r, 2000));
+          break;
+        } catch {
+          // siguiente selector
+        }
+      }
+
+      // También intentar dentro de iframes
+      for (const frame of page.frames()) {
+        for (const selector of SELECTORS) {
+          try {
+            const btn = await frame.$(selector);
+            if (btn) {
+              await btn.click();
+              await new Promise((r: any) => setTimeout(r, 2000));
+              return;
+            }
+          } catch {
+            // continuar
+          }
+        }
+      }
+    },
   },
 };
