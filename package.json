@@ -15,6 +15,8 @@
     "test:cookies:20minutos": "node scripts/accept-cookies.js https://www.20minutos.es",
     "test:cookies:elespanol": "node scripts/accept-cookies.js https://www.elespanol.com",
     "test:cookies:elpais": "node scripts/accept-cookies.js https://elpais.com",
+    "audit:as": "node scripts/accept-cookies.js https://as.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-as.config.ts --build-static --output-path reports/as.com/local",
+    "test:cookies:as": "node scripts/accept-cookies.js https://as.com",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -25,6 +25,7 @@ const CONSENT_SELECTORS = [
   ".mrf-button.accept", // 20minutos
   'button[onclick*="acceptConsentWall"]', // elpais (consent wall)
   ".pmConsentWall-button", // elpais (fallback)
+  'astro-island[props*="acceptAll"] button', // Astro first-layer CMP
   "#onetrust-accept-btn-handler", // OneTrust
   ".fc-cta-consent", // Funding Choices (Google)
   '[data-testid="GDPR-accept"]', // custom
