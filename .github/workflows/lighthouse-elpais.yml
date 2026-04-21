@@ -1,0 +1,77 @@
+name: Lighthouse - elpais.com
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Unlighthouse
+        run: |
+          npm install -g @unlighthouse/cli puppeteer
+          npm list -g --depth=0 | grep unlighthouse
+          unlighthouse-ci --version || true
+
+      - name: Generate timestamp
+        id: ts
+        run: echo "timestamp=$(TZ='Europe/Madrid' date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
+
+      - name: Accept cookie consent
+        run: node scripts/accept-cookies.js https://www.elpais.com
+
+      - name: Run Unlighthouse audit
+        run: |
+          unlighthouse-ci \
+            --config-file unlighthouse-elpais.config.ts \
+            --build-static \
+            --output-path reports/elpais.com/${{ steps.ts.outputs.timestamp }}/
+
+      - name: Inject noindex meta into reports
+        run: |
+          find reports/elpais.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="utf-8">|<meta charset="utf-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+          find reports/elpais.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+
+      - name: Prune old reports (keep last 3)
+        run: |
+          REPORT_DIR="reports/elpais.com"
+          REPORTS=($(ls -d "$REPORT_DIR"/*/ 2>/dev/null | sort))
+          COUNT=${#REPORTS[@]}
+          if [ "$COUNT" -gt 3 ]; then
+            DELETE_COUNT=$((COUNT - 3))
+            for dir in "${REPORTS[@]:0:$DELETE_COUNT}"; do
+              echo "Removing old report: $dir"
+              rm -rf "$dir"
+            done
+          fi
+
+      - name: Generate index.html
+        run: node scripts/generate-index.js
+
+      - name: Commit & push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ index.html
+          git commit -m "Lighthouse report: elpais.com ${{ steps.ts.outputs.timestamp }}"
+          git push

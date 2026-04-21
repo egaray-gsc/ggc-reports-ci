@@ -23,6 +23,7 @@ const OUTPUT =
 const CONSENT_SELECTORS = [
   "#didomi-notice-agree-button", // Didomi
   ".mrf-button.accept", // 20minutos
+  ".pmConsentWall-button", // elpais
   "#onetrust-accept-btn-handler", // OneTrust
   ".fc-cta-consent", // Funding Choices (Google)
   '[data-testid="GDPR-accept"]', // custom
@@ -35,6 +36,8 @@ async function tryAcceptConsent(page) {
   for (const selector of CONSENT_SELECTORS) {
     try {
       await page.waitForSelector(selector, { timeout: 5000, visible: true });
+      const text = await page.$eval(selector, (el) => el.textContent || "");
+      if (!/aceptar/i.test(text)) continue;
       await page.click(selector);
       await new Promise((r) => setTimeout(r, 3000));
       console.log(`✅ Consentimiento aceptado (${selector})`);
@@ -53,6 +56,8 @@ async function tryAcceptConsentInFrames(page) {
       try {
         const button = await frame.$(selector);
         if (button) {
+          const text = await button.evaluate((el) => el.textContent || "");
+          if (!/aceptar/i.test(text)) continue;
           await button.click();
           await new Promise((r) => setTimeout(r, 3000));
           console.log(`✅ Consentimiento aceptado en iframe (${selector})`);
