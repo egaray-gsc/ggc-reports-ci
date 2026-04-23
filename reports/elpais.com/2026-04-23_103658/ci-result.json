@@ -1,0 +1,402 @@
+[
+  {
+    "path": "/",
+    "score": 0.72,
+    "performance": 0.49,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/",
+    "score": 0.75,
+    "performance": 0.59,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-colombia/2026-04-20/la-colombiana-yuvelis-natalia-moreno-blanco-gana-con-25-anos-el-premio-goldman-por-oponerse-al-fracking.html",
+    "score": 0.77,
+    "performance": 0.84,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/america-colombia/2026-04-21/los-colombianos-varados-en-el-congo-tras-ser-expulsados-de-estados-unidos-nunca-pense-conocer-africa-en-estas-circunstancias.html",
+    "score": 0.69,
+    "performance": 0.53,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america-colombia/2026-04-22/llamar-asesinato-al-control-letal-de-los-hipopotamos-de-pablo-escobar-es-injusto.html",
+    "score": 0.62,
+    "performance": 0.35,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/america-colombia/2026-04-23/el-gobierno-petro-suma-otra-pelea-interna-en-su-recta-final.html",
+    "score": 0.68,
+    "performance": 0.52,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america-colombia/elecciones-presidenciales/2026-04-23/viajes-al-mundial-o-rifas-millonarias-los-cuestionados-metodos-de-la-ultraderecha-para-atraer-votos-en-colombia.html",
+    "score": 0.74,
+    "performance": 0.65,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america-futura/",
+    "score": 0.73,
+    "performance": 0.55,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america-futura/2026-04-21/america-latina-despidio-tres-especies-en-2025.html",
+    "score": 0.72,
+    "performance": 0.63,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/america-futura/2026-04-21/comienza-la-conferencia-del-acuerdo-de-escazu-america-latina-y-el-caribe-deben-fortalecer-su-democracia-ambiental.html",
+    "score": 0.65,
+    "performance": 0.44,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/america/",
+    "score": 0.83,
+    "performance": 0.9,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-19/en-la-caracas-sin-maduro-ahorita-todo-es-prioridad.html",
+    "score": 0.76,
+    "performance": 0.61,
+    "accessibility": 0.97,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/2026-04-22/diaz-canel-si-estados-unidos-no-acepta-negociar-en-los-terminos-cubanos-no-hay-negociacion.html",
+    "score": 0.76,
+    "performance": 0.74,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/2026-04-22/maykel-osorbo-y-luis-manuel-otero-los-presos-politicos-cubanos-que-mas-pesan-en-la-habana-y-washington.html",
+    "score": 0.69,
+    "performance": 0.53,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/2026-04-23/brasil-aplica-la-reciprocidad-y-retira-las-credenciales-a-un-policia-de-estados-unidos-destinado-en-brasilia.html",
+    "score": 0.67,
+    "performance": 0.44,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/2026-04-23/carlos-baute-maria-corina-machado-y-el-racismo-venezolano.html",
+    "score": 0.65,
+    "performance": 0.38,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/2026-04-23/el-prestigio-de-china-crece-con-fuerza-en-latinoamerica-mientras-el-de-eeuu-se-desploma-y-el-de-europa-decae.html",
+    "score": 0.76,
+    "performance": 0.71,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/2026-04-23/rubem-valentim-el-artista-que-convirtio-los-simbolos-de-las-religiones-afrobrasilenas-en-arte-universal.html",
+    "score": 0.76,
+    "performance": 0.72,
+    "accessibility": 0.92,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/economia/",
+    "score": 0.7,
+    "performance": 0.41,
+    "accessibility": 0.94,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/",
+    "score": 0.78,
+    "performance": 0.74,
+    "accessibility": 0.93,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-03-31/centroamerica-y-los-vientos-que-soplan.html",
+    "score": 0.65,
+    "performance": 0.38,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-03-31/la-verdad-en-disputa-democracia-desinformacion-y-la-urgencia-de-reconstruir-el-espacio-comun-en-iberoamerica.html",
+    "score": 0.66,
+    "performance": 0.43,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-04-08/la-democracia-no-se-entrena-gratis.html",
+    "score": 0.78,
+    "performance": 0.83,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/america/iberoamerica-democracia/2026-04-14/hacia-una-democracia-de-izquierda.html",
+    "score": 0.79,
+    "performance": 0.73,
+    "accessibility": 0.97,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/america/sociedad/",
+    "score": 0.79,
+    "performance": 0.75,
+    "accessibility": 0.94,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/aniversario/",
+    "score": 0.81,
+    "performance": 0.84,
+    "accessibility": 0.93,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/aniversario/2026-04-20/antonio-munoz-molina-escritor-las-fuerzas-mas-poderosas-estan-desmontando-el-periodismo.html",
+    "score": 0.72,
+    "performance": 0.67,
+    "accessibility": 0.8,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/argentina/",
+    "score": 0.83,
+    "performance": 0.79,
+    "accessibility": 1,
+    "best-practices": 0.54,
+    "seo": 1
+  },
+  {
+    "path": "/argentina/2026-04-22/milei-busca-reformar-el-regimen-electoral-antes-de-ir-por-un-nuevo-mandato-presidencial.html",
+    "score": 0.69,
+    "performance": 0.55,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/argentina/2026-04-23/el-magnate-tecnologico-peter-thiel-estrecha-lazos-con-milei-en-buenos-aires.html",
+    "score": 0.64,
+    "performance": 0.35,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/autor/alejandro-ciriza/",
+    "score": 0.81,
+    "performance": 0.88,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/alejandro-mendoza-arriaga/",
+    "score": 0.75,
+    "performance": 0.63,
+    "accessibility": 0.89,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/ana-alonso-de-blas/",
+    "score": 0.81,
+    "performance": 0.89,
+    "accessibility": 0.89,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/ana-carbajosa/",
+    "score": 0.78,
+    "performance": 0.77,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/ana-fernandez-abad/",
+    "score": 0.76,
+    "performance": 0.68,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/andres-mourenza-urbina/",
+    "score": 0.78,
+    "performance": 0.79,
+    "accessibility": 0.85,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/beatriz-guillen-torres/",
+    "score": 0.75,
+    "performance": 0.67,
+    "accessibility": 0.86,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/autor/berna-gonzalez-harbour/",
+    "score": 0.76,
+    "performance": 0.66,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/",
+    "score": 0.71,
+    "performance": 0.47,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-17/las-50-recomendaciones-de-babelia-para-el-dia-del-libro-de-2026.html",
+    "score": 0.73,
+    "performance": 0.65,
+    "accessibility": 0.82,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/babelia/2026-04-22/los-mejores-libros-infantiles-y-juveniles-para-regalar-en-sant-jordi.html",
+    "score": 0.67,
+    "performance": 0.55,
+    "accessibility": 0.75,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/babelia/2026-04-23/luc-delahaye-una-realidad-entre-el-documento-y-la-ficcion.html",
+    "score": 0.65,
+    "performance": 0.45,
+    "accessibility": 0.75,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/chile/",
+    "score": 0.74,
+    "performance": 0.55,
+    "accessibility": 0.95,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/chile/2026-04-22/kast-presenta-su-megarreforma-y-la-envia-al-congreso-la-tarea-numero-uno-es-generar-empleo-el-resto-es-musica.html",
+    "score": 0.71,
+    "performance": 0.61,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/ciencia/",
+    "score": 0.82,
+    "performance": 0.92,
+    "accessibility": 0.9,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/ciencia/2026-04-21/rafael-bachiller-astronomo-asi-imagino-a-los-extraterrestres-como-pequenos-microbios.html",
+    "score": 0.74,
+    "performance": 0.74,
+    "accessibility": 0.91,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/ciencia/2026-04-22/los-monos-de-gibraltar-comen-tierra-para-purgar-la-comida-basura-que-les-dan-los-turistas.html",
+    "score": 0.65,
+    "performance": 0.46,
+    "accessibility": 0.84,
+    "best-practices": 0.54,
+    "seo": 0.77
+  },
+  {
+    "path": "/cultura/",
+    "score": 0.75,
+    "performance": 0.68,
+    "accessibility": 0.86,
+    "best-practices": 0.54,
+    "seo": 0.92
+  },
+  {
+    "path": "/cultura/2026-04-22/hallado-en-la-bahia-de-cadiz-un-barco-italiano-casi-intacto-hundido-por-el-pirata-drake-en-el-siglo-xvi.html",
+    "score": 0.69,
+    "performance": 0.52,
+    "accessibility": 0.83,
+    "best-practices": 0.54,
+    "seo": 0.85
+  },
+  {
+    "path": "/cultura/2026-04-23/han-kang-sere-yo-la-rara-al-no-sentir-vertigo-despues-del-nobel.html",
+    "score": 0.78,
+    "performance": 0.79,
+    "accessibility": 0.88,
+    "best-practices": 0.54,
+    "seo": 0.92
+  }
+]
