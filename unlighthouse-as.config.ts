@@ -41,16 +41,20 @@ export default {
       const euCookie = raw.find((c: any) => c.name === "euconsent-v2");
 
       if (didomiCookie || euCookie) {
-        await page.evaluateOnNewDocument(
-          (didomiVal: string | null, euVal: string | null) => {
-            try {
-              if (didomiVal) localStorage.setItem("didomi_token", didomiVal);
-              if (euVal) localStorage.setItem("euconsent-v2", euVal);
-            } catch {}
-          },
-          didomiCookie?.value ?? null,
-          euCookie?.value ?? null,
-        );
+        try {
+          await page.evaluateOnNewDocument(
+            (didomiVal: string | null, euVal: string | null) => {
+              try {
+                if (didomiVal) localStorage.setItem("didomi_token", didomiVal);
+                if (euVal) localStorage.setItem("euconsent-v2", euVal);
+              } catch {}
+            },
+            didomiCookie?.value ?? null,
+            euCookie?.value ?? null,
+          );
+        } catch (e: any) {
+          if (!e.message?.includes("Target closed") && !e.message?.includes("Session closed")) throw e;
+        }
       }
 
       try {
