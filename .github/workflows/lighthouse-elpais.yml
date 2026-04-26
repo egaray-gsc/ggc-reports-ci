@@ -31,13 +31,6 @@ jobs:
           npm list -g --depth=0 | grep unlighthouse
           unlighthouse-ci --version || true
 
-      - name: Configure R2 credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          aws-region: auto
-
       - name: Generate timestamp
         id: ts
         run: echo "timestamp=$(TZ='Europe/Madrid' date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
@@ -60,6 +53,10 @@ jobs:
             -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
 
       - name: Upload report to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
         run: |
           aws s3 sync \
             reports/elpais.com/${{ steps.ts.outputs.timestamp }}/ \
