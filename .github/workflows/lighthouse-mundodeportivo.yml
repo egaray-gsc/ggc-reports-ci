@@ -31,6 +31,13 @@ jobs:
           npm list -g --depth=0 | grep unlighthouse
           unlighthouse-ci --version || true
 
+      - name: Configure R2 credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws-region: auto
+
       - name: Generate timestamp
         id: ts
         run: echo "timestamp=$(TZ='Europe/Madrid' date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
@@ -53,26 +60,30 @@ jobs:
           find reports/mundodeportivo.com/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
             -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
 
-      - name: Prune old reports (keep last 3)
+      - name: Upload report to R2
         run: |
-          REPORT_DIR="reports/mundodeportivo.com"
-          REPORTS=($(ls -d "$REPORT_DIR"/*/ 2>/dev/null | sort))
-          COUNT=${#REPORTS[@]}
-          if [ "$COUNT" -gt 3 ]; then
-            DELETE_COUNT=$((COUNT - 3))
-            for dir in "${REPORTS[@]:0:$DELETE_COUNT}"; do
-              echo "Removing old report: $dir"
-              rm -rf "$dir"
-            done
-          fi
+          aws s3 sync \
+            reports/mundodeportivo.com/${{ steps.ts.outputs.timestamp }}/ \
+            s3://${{ secrets.R2_BUCKET }}/mundodeportivo.com/${{ steps.ts.outputs.timestamp }}/ \
+            --endpoint-url ${{ secrets.R2_ENDPOINT }} \
+            --cache-control "public, max-age=31536000, immutable"
 
-      - name: Generate index.html
-        run: node scripts/generate-index.js
+      - name: Remove local report
+        run: rm -rf reports/mundodeportivo.com/${{ steps.ts.outputs.timestamp }}/
+
+      - name: Generate index.html from R2
+        env:
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          R2_BASE_URL: ${{ secrets.R2_BASE_URL }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: node scripts/generate-index-r2.js
 
       - name: Commit & push report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/ index.html
+          git add index.html
           git commit -m "Lighthouse report: mundodeportivo.com ${{ steps.ts.outputs.timestamp }}"
           git push
