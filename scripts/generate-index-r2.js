@@ -58,6 +58,7 @@ function getReports(objects) {
 
   for (const domain of Object.keys(groups)) {
     groups[domain].sort().reverse();
+    groups[domain] = groups[domain].slice(0, 3);
   }
 
   return groups;
