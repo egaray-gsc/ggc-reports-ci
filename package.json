@@ -19,6 +19,8 @@
     "audit:lavanguardia-portadas": "node scripts/accept-cookies.js https://www.lavanguardia.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-lavanguardia-portadas.config.ts --build-static --output-path reports/lavanguardia-portadas/local",
     "test:cookies:as": "node scripts/accept-cookies.js https://as.com",
     "test:cookies:lavanguardia-portadas": "node scripts/accept-cookies.js https://www.lavanguardia.com",
+    "audit:mundodeportivo-portadas": "node scripts/accept-cookies.js https://www.mundodeportivo.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-mundodeportivo-portadas.config.ts --build-static --output-path reports/mundodeportivo-portadas/local",
+    "test:cookies:mundodeportivo-portadas": "node scripts/accept-cookies.js https://www.mundodeportivo.com",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

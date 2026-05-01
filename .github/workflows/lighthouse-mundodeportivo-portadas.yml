@@ -1,0 +1,85 @@
+name: Lighthouse - mundodeportivo.com (portadas)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Unlighthouse
+        run: |
+          npm install -g @unlighthouse/cli puppeteer
+          npm list -g --depth=0 | grep unlighthouse
+          unlighthouse-ci --version || true
+
+      - name: Generate timestamp
+        id: ts
+        run: echo "timestamp=$(TZ='Europe/Madrid' date +'%Y-%m-%d_%H%M%S')" >> "$GITHUB_OUTPUT"
+
+      - name: Accept cookie consent
+        run: node scripts/accept-cookies.js https://www.mundodeportivo.com
+
+      - name: Run Unlighthouse audit
+        run: |
+          unlighthouse-ci \
+            --config-file unlighthouse-mundodeportivo-portadas.config.ts \
+            --build-static \
+            --output-path reports/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/
+
+      - name: Inject noindex meta into reports
+        run: |
+          find reports/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="utf-8">|<meta charset="utf-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+          find reports/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/ -name "*.html" \
+            -exec sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8">\n  <meta name="robots" content="noindex, nofollow">|' {} \;
+
+      - name: Upload report to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          aws s3 sync \
+            reports/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/ \
+            s3://${{ secrets.R2_BUCKET }}/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/ \
+            --endpoint-url ${{ secrets.R2_ENDPOINT }} \
+            --cache-control "public, max-age=31536000, immutable"
+
+      - name: Remove local report
+        run: rm -rf reports/mundodeportivo-portadas/${{ steps.ts.outputs.timestamp }}/
+
+      - name: Generate index.html from R2
+        env:
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          R2_BASE_URL: ${{ secrets.R2_BASE_URL }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: node scripts/generate-index-r2.js
+
+      - name: Commit & push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Lighthouse report: mundodeportivo-portadas ${{ steps.ts.outputs.timestamp }}"
+          git push
