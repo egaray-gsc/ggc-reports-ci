@@ -16,7 +16,9 @@
     "test:cookies:elespanol": "node scripts/accept-cookies.js https://www.elespanol.com",
     "test:cookies:elpais": "node scripts/accept-cookies.js https://elpais.com",
     "audit:as": "node scripts/accept-cookies.js https://as.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-as.config.ts --build-static --output-path reports/as.com/local",
+    "audit:lavanguardia-portadas": "node scripts/accept-cookies.js https://www.lavanguardia.com && npx @unlighthouse/cli unlighthouse-ci --config-file unlighthouse-lavanguardia-portadas.config.ts --build-static --output-path reports/lavanguardia-portadas/local",
     "test:cookies:as": "node scripts/accept-cookies.js https://as.com",
+    "test:cookies:lavanguardia-portadas": "node scripts/accept-cookies.js https://www.lavanguardia.com",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
